@@ -1,0 +1,53 @@
+.list-movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .list-movies li {
+    margin: 10px; }
+
+body {
+  background-color: #333333; }
+
+.container-movie {
+  position: relative;
+  width: 50%; }
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.overlay {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.7;
+  overflow: hidden;
+  width: 200%;
+  height: 0;
+  transition: .5s ease; }
+
+.container-movie:hover .overlay {
+  height: 30%; }
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
+
+.details-page {
+  color: white; }
+.details-image{
+	width: 600px;
+}
+
+/*# sourceMappingURL=styles.css.map */

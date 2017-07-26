@@ -1,0 +1,32 @@
+<div class="container">
+    <h2 class="text-center">Search</h2>
+    <div class="jumbotron">
+        <form class="form-horizontal">
+            <div class="form-group">
+                    <input ng-model="movieQuery" type="text" class="form-control" id="inputEmail" placeholder="Write Movie..." style="">
+            </div>
+            <div class="form-group">
+                <div class="col-xs-12">
+                    <button ng-click="searchMovie()" type="submit" class="btn btn-primary">Search Movie</button>
+                </div>
+            </div>
+        </form>
+    </div>
+ 
+        <h2 class="text-center">Movies</h2>
+            <ul class="list-movies list-unstyled">
+                <li ng-repeat="movie in movies">
+                    <div class="container-movie">
+                        <a ng-href="#!/movie/{{ movie.id }}"><img ng-src="https://image.tmdb.org/t/p/w300/{{ movie.poster_path }}"></a>
+                        <div class="overlay">
+                            <h3 class="text">{{ movie.title }}</h3>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- <select ng-model="movieSelected" ng-change="movieSelection()">
+                <option ng-repeat="movie in movies" value="{{movie.id}}"> {{movie.id}}: {{movie.title}}</option>
+            </select> -->
+        
+        </div>
+    </div>

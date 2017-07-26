@@ -1,0 +1,17 @@
+<div class='container'>
+    <div ng-init="inComingMovies()">
+        <ul class="list-movies list-unstyled">
+            <li ng-repeat='inComingMovie in inComingMovies'>
+                <div class="container-movie">
+                    <a ng-href="#!/movie/{{ inComingMovie.id }}"><img ng-src="http://image.tmdb.org/t/p/w300/{{ inComingMovie.poster_path }}"></a>
+                    <div class="overlay">
+                        <h3>{{inComingMovie.original_title}}</h3>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+

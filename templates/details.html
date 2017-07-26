@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="details-page">
+        <div class="row">
+            <div class="col-md-6">
+                <h2><i class="glyphicon glyphicon-film"></i>{{ detailMovie.original_title }}</h2>
+                <h3>{{ detailMovie.tagline }}</h3>
+                <div class="row">
+                    <div class="col-md-6 left-content">
+                        <h4>ReleaseDate</h4>
+                        <p><i class="glyphicon glyphicon-calendar small-icon"></i>{{ detailMovie.release_date }}</p>
+                    </div>
+                    <div class="col-md-6 right-content">
+                        <div>
+                            <h4>User Rating</h4>
+                            <div>
+                                <p><i class="glyphicon glyphicon-star small-icon"></i>{{ deatilMovie.vote_average }}</p>
+                            </div>
+                            <h4>Votes</h4>
+                            <div>
+                                <p><i class="glyphicon glyphicon-user small-icon"></i>{{ detailMovie.vote_count }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Here is the description -->
+                <div class="description">
+                    <h4>Overview</h4>
+                    <p>{{ detailMovie.overview }}</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="col-md-12">
+                    <img class="img-responsive details-image" ng-src="https://image.tmdb.org/t/p/w300{{ detailMovie.backdrop_path }} ">
+                    <!-- Here we put the secondary image -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

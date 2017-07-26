@@ -1,0 +1,21 @@
+<div class='container'>
+    <div ng-init="popularMovies()">
+        <ul class="list-movies list-unstyled">
+            <li ng-repeat='popularMovie in popularMovies'>
+                <div class="container-movie">
+                    <a ng-href="#!/movie/{{ popularMovie.id }}">
+                    	<img  ng-src="http://image.tmdb.org/t/p/w300/{{ popularMovie.poster_path }}">
+                    </a>
+                    <div class="overlay">          
+                     <h3>{{popularMovie.original_title}}</h3>
+                     </div>
+                </div>
+            </li>
+        </ul>
+   </div>
+</div>
+
+
+
+
+
