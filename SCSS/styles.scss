@@ -1,12 +1,12 @@
 .list-movies {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
              
-            li {
-            	margin: 10px;
-            }
-            }
+    li {
+        margin: 10px;
+        }
+}
 
 body {
 	background-color: #333333;
@@ -34,6 +34,8 @@ body {
   width: 200%;
   height: 0;
   transition: .5s ease;
+  display: flex;
+  justify-content: center;
 }
 
 .container-movie:hover .overlay {

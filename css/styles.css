@@ -28,7 +28,9 @@ body {
   overflow: hidden;
   width: 200%;
   height: 0;
-  transition: .5s ease; }
+  transition: .5s ease;
+  display: flex;
+  justify-content: center; }
 
 .container-movie:hover .overlay {
   height: 30%; }
@@ -46,8 +48,5 @@ body {
 
 .details-page {
   color: white; }
-.details-image{
-	width: 600px;
-}
 
 /*# sourceMappingURL=styles.css.map */

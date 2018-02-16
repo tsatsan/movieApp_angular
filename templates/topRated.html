@@ -1,0 +1,15 @@
+<div class='container'>
+    <div ng-init="topRatedMovies()">
+        <ul class="list-movies list-unstyled">
+            <li ng-repeat='topRatedMovie in topRatedMovies'>
+                <div class="container-movie">
+                    <a ng-href="#!/movie/{{ topRatedMovie.id }}"><img ng-src="http://image.tmdb.org/t/p/w300/{{ topRatedMovie.poster_path }}"></a>
+                    <div class="overlay">
+                        <h3>{{topRatedMovie.original_title}}</h3>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+

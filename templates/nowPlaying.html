@@ -1,0 +1,14 @@
+<div class='container'>
+    <div ng-init="nowPlayingMovies()">
+        <ul class="list-movies list-unstyled">
+            <li ng-repeat='nowPlayingMovie in nowPlayingMovies'>
+                <div class="container-movie">
+                    <a ng-href="#!/movie/{{ nowPlayingMovie.id }}"><img ng-src="http://image.tmdb.org/t/p/w300/{{ nowPlayingMovie.poster_path }}"></a>
+                    <div class="overlay">
+                        <h3>{{nowPlayingMovie.original_title}}</h3>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
