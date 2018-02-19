@@ -9,7 +9,7 @@
 }
 
 body {
-	background-color: #333333;
+  background-color: #333333;
 }
 .container-movie {
   position: relative;
@@ -34,6 +34,8 @@ body {
   width: 200%;
   height: 0;
   transition: .5s ease;
+  display: flex;
+  justify-content: center;
 }
 
 .container-movie:hover .overlay {
@@ -52,5 +54,5 @@ body {
   -ms-transform: translate(-50%, -50%);
 }
 .details-page {
-	color: white;
+  color: white;
 }
