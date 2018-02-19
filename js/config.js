@@ -17,4 +17,12 @@ angular.module('pelimoviesApp')
         templateUrl: 'templates/inComing.html',
         controller: 'inComingController'
       })
+      .when('/topRated', {
+        templateUrl: 'templates/topRated.html',
+        controller: 'topRatedController'
+      })
+      .when('/nowPlaying', {
+        templateUrl: 'templates/nowPlaying.html',
+        controller: 'nowPlayingController'
+      })
   })
